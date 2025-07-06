@@ -1,24 +1,41 @@
-# LinkPulse – Phishing Link Scanner
+# 🕷️ BaitScan – Terminal Phishing Link Scanner
 
-**LinkPulse** is a Python-based phishing detection tool that evaluates the safety of a URL using local heuristics and optional threat intelligence APIs. It features a visually rich terminal UI with color-coded risk bars to simulate a classic cyber-security vibe.
+**BaitScan** is a Python-based phishing detection tool built with an old-school cyberpunk vibe. It evaluates URLs using smart local heuristics and gives instant visual feedback through animated, color-coded terminal bars — no cloud dependency required.
 
-## 🔍 Features
-- Smart risk scoring system (0–100)
-- Colored terminal bars (Green, Yellow, Red) for visual feedback
-- Local rule-based detection (URL structure, keywords, etc.)
-- Optional VirusTotal or SafeBrowsing API integration
-- CLI-based and beginner-friendly
-
-## 🛠️ Built With
-- Python
-- colorama (for terminal colors)
-
-## 🎓 Internship Submission
-This tool was built as part of the Cyber Security Internship at **Brainwave Matrix Solutions**.
-
-## 📸 Demo
-*coming soon: terminal screenshots and a LinkedIn post link*
+> 🧠 Developed for the Cyber Security Internship at **Brainwave Matrix Solutions**  
+> ⚡ Fast, lightweight, and tuned to catch suspicious links in real time
 
 ---
 
-Wanna go full retro with the theme and add a pixel-styled terminal screenshot once it’s done? I’ll help with that too.
+## 🚀 Features
+
+- ✅ **Risk Scoring Engine** (0–100)
+- ✅ **Color-Coded Terminal Bars**  
+  Green → Safe | Yellow → Suspicious | Red → Likely Phishing
+- ✅ **Offline-First Heuristics**  
+  - Suspicious TLD detection (`.xyz`, `.top`, etc.)  
+  - Phishing keyword matching in URL and domain  
+  - Hyphen overload flag (`secure-paypal-login`)  
+  - Obfuscated characters (`%2F`, `%20`, etc.)  
+  - Brand spoofing checks (e.g. `paypol-login.com`)
+- ✅ **Looped CLI** – scan one URL or many in a single run
+- ✅ **No paid APIs required** (optional VirusTotal integration in progress)
+
+---
+
+## 🎓 Internship Context
+
+> Built during the **Cyber Security Internship** at  
+> **Brainwave Matrix Solutions** 🧠  
+> Project folder and GitHub repo name follow official guidelines:  
+> `Brainwave_Matrix_Intern`
+
+---
+
+## 📦 Quick Setup
+
+```bash
+git clone https://github.com/yourusername/Brainwave_Matrix_Intern.git
+cd Brainwave_Matrix_Intern/Brainwave_Matrix_Intern
+pip install -r requirements.txt
+python main.py
