@@ -16,7 +16,7 @@ BANNER = Fore.CYAN + r"""
 
 
 def run_once() -> None:
-    """Single scan cycle."""
+    """Run a single URL scan."""
     url = input("\n🔗  Enter a URL to scan: ").strip()
     score, reasons = scan_url(url)
 
@@ -27,13 +27,11 @@ def run_once() -> None:
     for reason in reasons:
         print(f"  • {reason}")
 
-    if score <= 30:
-        verdict = "SAFE ✅"
-    elif score <= 70:
-        verdict = "SUSPICIOUS ⚠️"
-    else:
-        verdict = "PHISHING LIKELY ❌"
-
+    verdict = (
+        "SAFE ✅" if score <= 30
+        else "SUSPICIOUS ⚠️" if score <= 70
+        else "PHISHING LIKELY ❌"
+    )
     print(f"\nVerdict: {verdict}")
 
 
@@ -42,8 +40,8 @@ def main():
     while True:
         run_once()
         again = input("\n🔄  Scan another? (Y/N): ").strip().lower()
-        if again != "Y":
-            print("\n👋  Exiting BaitScan. Stay safe out there!")
+        if again != "y":
+            print("\n👋  Exiting BaitScan. Stay safe out there!\n")
             break
 
 
