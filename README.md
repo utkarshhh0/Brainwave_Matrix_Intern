@@ -15,9 +15,9 @@
 - ✅ **Offline-First Heuristics**  
   - Suspicious TLD detection (`.xyz`, `.top`, etc.)  
   - Phishing keyword matching in URL and domain  
-  - Hyphen overload flag (`secure-paypal-login`)  
+  - Hyphen overload flag (`secure-instagram-login`)  
   - Obfuscated characters (`%2F`, `%20`, etc.)  
-  - Brand spoofing checks (e.g. `paypol-login.com`)
+  - Brand spoofing checks (e.g. `googlepay-login.com`)
 - ✅ **Looped CLI** – scan one URL or many in a single run
 - ✅ **No paid APIs required** (optional VirusTotal integration in progress)
 
@@ -35,7 +35,7 @@
 ## 📦 Quick Setup
 
 ```bash
-git clone https://github.com/yourusername/Brainwave_Matrix_Intern.git
+git clone https://github.com/utkarshhh0/Brainwave_Matrix_Intern
 cd Brainwave_Matrix_Intern/Brainwave_Matrix_Intern
 pip install -r requirements.txt
 python main.py
