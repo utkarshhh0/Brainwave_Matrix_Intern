@@ -1,9 +1,8 @@
-# scanner/core.py  –  quick‑boost heuristics edition
 from typing import Tuple
 import re
 from urllib.parse import urlparse
 
-# ---------- CONFIG --------------------------------------------------------
+# CONFIG
 PHISH_KEYWORDS  = ["login", "verify", "secure", "account", "bank",
                    "update", "confirm", "password", "signin"]
 
@@ -14,7 +13,7 @@ SHORTENERS      = ["bit.ly", "tinyurl.com", "t.co", "goo.gl", "is.gd", "buff.ly"
 
 BRAND_TARGETS   = ["paypal", "google", "amazon", "facebook", "apple", "microsoft"]
 
-# ---------- MAIN SCAN FUNCTION -------------------------------------------
+# MAIN SCAN FUNCTION
 def scan_url(url: str) -> Tuple[int, list]:
     """
     Analyse a URL and return (risk_score 0‑100, reasons list)

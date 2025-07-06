@@ -1,4 +1,3 @@
-# main.py  –  interactive launcher
 from scanner.core import scan_url
 from visual.bar import render_bar
 from colorama import Fore, Style, init

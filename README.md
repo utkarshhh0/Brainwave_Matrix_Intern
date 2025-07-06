@@ -38,4 +38,8 @@
 git clone https://github.com/utkarshhh0/Brainwave_Matrix_Intern
 cd Brainwave_Matrix_Intern/Brainwave_Matrix_Intern
 pip install -r requirements.txt
+<<<<<<< HEAD
 python main.py
+=======
+python main.py
+>>>>>>> df9ba4f (updated src and readme)
