@@ -1,0 +1,50 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test, output, or temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Compiled binaries or artifacts (if any in future)
+*.exe
+*.out
+*.dll
+
+
+# Python dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Installer logs
+pip-log.txt
+
+# PyInstaller build directories
+build/
+dist/
+*.spec

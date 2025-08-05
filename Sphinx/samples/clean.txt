@@ -1,0 +1,9 @@
+import os
+import base64
+import subprocess
+
+eval("print('this is bad')")
+exec("print('executed')")
+a = "aGVsbG8gd29ybGQ="  # base64
+decoded = base64.b64decode(a)
+subprocess.call(['rm', '-rf', '/'])
