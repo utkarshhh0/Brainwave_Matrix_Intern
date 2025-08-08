@@ -1,7 +1,7 @@
 from colorama import Fore, Style, init
 init(autoreset=True)
 
-BAR_CHAR = "│"
+BAR_CHAR = "‖"
 
 GREEN  = Fore.GREEN + Style.BRIGHT
 YELLOW = Fore.YELLOW + Style.BRIGHT
